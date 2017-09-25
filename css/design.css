@@ -1,0 +1,73 @@
+.card{
+	display:block;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin-top: 20px;
+	box-shadow: 0px 1px 4px 1px;
+}
+
+.container{
+	padding : 1%;
+	display: inline-block;
+}
+
+.box{
+	display:inline-block;
+	padding: 1%;
+	border:1px;
+	border-style: solid;
+	border-color: black;
+}
+
+.svg-img{
+	background-image: url("/Images/logo.svg");
+}
+
+.title-card{
+	display:contents;
+	padding-left: 1%;
+	padding-right: 1%;
+	box-shadow: 0px 0px 4px 4px;
+	color:steelblue;
+}
+
+.text-heading{
+	text-align:center;
+	padding-bottom: 4px;
+	margin: 0 0 0 0;
+}
+
+.color-box{
+	display:inline-block;
+	padding: 0%;
+	width:100px;
+	height:100px;
+	border:1px;
+	border-style: solid;
+	border-color: black;
+}
+
+.square{
+	width:100px;
+	height:100px;
+}
+
+.bg-gold{background-color: #FFB80A !important}
+.bg-plat{background-color: #E5E5E5 !important}
+.bg-lightblue{background-color: #06AAFF !important}
+.bg-darkblue{background-color: #00517A !important}
+.bg-brown{background-color: #B23C00 !important}
+.bg-steel{background-color: steelblue !important}
+.gold {color:#FFB80A !important}
+.plat {color:#E5E5E5 !important}
+.lightblue {color:#06AAFF !important}
+.darkblue{color:#00517A !important}
+.brown {color:#B23C00 !important}
+.steelblue{color:steelblue !important}
+.underlined{
+	text-decoration: underline;
+}
+
+.ts-24{
+	font-size: 24px;
+}

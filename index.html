@@ -1,10 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nestor Home</title>
-</head>
-<body>
-  This site is hosted by Github Pages!
-</body>  
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="/js/jsMain.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Forum|Fugaz+One|Metamorphous|Prosto+One|Share|Raleway|Just+Another+Hand" rel="stylesheet" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="/css/color.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" media="small" href="/css/smallstyle.css">
+	</head>
+    
+    <body class="bg-gold">
+        
+        <div class="w3-top" media="small">
+            <div class="w3-card-4 w3-bar bg-gold darkblue" id="navbar">
+                <a href="#home" class="w3-bar-item w3-button w3-wide font_meta">Nestor</a>
+                <div class="w3-right w3-hide-small ">
+                    <a href="#about" class="w3-bar-item w3-button button-theme">About</a>
+                    <a href="#Services" class="w3-bar-item w3-button">Services</a>
+                    <a href="#Contact" class="w3-bar-item w3-button">Contact</a>
+                </div>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+			<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+              <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+              <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+              <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+              <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+              <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+              <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+        	</nav>
+        </div>
+        
+        
+        
+        
+        <header class="w3-row bg_image mainheader aligncontent" id="home">
+                <div class="w3-jumbo w3-hide-small font_meta gold">
+                    Nestor
+                </div>
+                <div class="w3-xxlarge w3-hide-large w3-hide-medium font_meta gold">
+                    Nestor
+                </div>
+                <div class="w3-large font_rale gold">
+                    A helpful guide through web, mobile, and desktop software design and development
+                </div>
+          <div class="w3-large color-orange w3-right">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+          </div>
+        </header>
+      
+        <main class="w3-large w3-card-4 topsheet" id="about" style="margin-left: 48px; margin-right: 48px;background-color: white">
+            <section class="w3-row-padding w3-center rowpadding whiterow" style="padding-bottom: 100px;">
+                <article class="w3-half rale-steel" style="padding-left: 50px;">
+                    <h2 style="text-align: justify;">About Nestor</h2>
+                    <p class="w3-justify">Nestor is a small startup design and development studio located in Lafayette, Louisiana. We stand by the little guy, small businesses and other startups who need professional level web, mobile, and desktop development solutions. </p>
+                    
+                    <p class="w3-justify">We live in Lafayette so we know what things should cost and you'll see this reflected in our pricing. Our goal is to be known as the goto development studio for Lafayette and we'll work to create your vision.</p>
+                </article>
+                <article class="w3-half">
+                   <img class="w3-container w3-image" src="/images/laicon.png">
+                </article>
+            </section>
+            
+            <div class="w3-row-padding w3-large w3-center bg-steel plat" id="Services" style="padding-top:100px; padding-bottom: 100px;">
+                <h2>What We Offer</h2>
+                <div class="w3-container w3-quarter" style="text-align-last: center">
+                    <div class="w3-margin">
+                    <h4 >Responsive Web Design</h4>
+                    </div>
+                    <img src="/images/webdesignsvg.svg">
+                    <p class="w3-container">A responsive design allows for a homogeneous look across devices. Basically, it works great and looks awesome no matter what the platform may be.</p>
+                </div>
+                <div class="w3-quarter">
+                    <div class="w3-margin">
+                    <h4>Application Design and Development</h4>
+                    </div>
+                    <img src="/images/softdevsvg.svg">
+                    <p>Any application, any platform, we got you. Professional application design and development at a cost you can afford, promise.</p>
+                </div>
+                <div class="w3-quarter">
+                    <div class="w3-margin">
+                    <h4>Consultations</h4>
+                    </div>
+                    <img src="/images/consultsvg.svg">
+                    <p>We get it, this stuff   is complicated. Having trouble deciding what to do with aging systems or how to upgrade that 10 year old website? Let's talk it out, on us.</p>
+                </div>
+                <div class="w3-quarter">
+                    <div class="w3-margin">
+                        <h4>Repair Service</h4>
+                    </div>
+                    <img src="/images/repairsvg.svg">
+                    <p>Did I mention we also provide computer, mobile, and tablet repair services?</p>
+                </div>
+            </div>
+            
+            <div id="Contact" class="rale-steel" style="padding-top: 100px; padding-bottom:100px">
+                <h3 class="w3-center">Contact</h3>
+                <p class="w3-center">Give us a shout and we'll get back to you ASAP</p>
+                <div class="w3-content">
+                  <div class="w3-card-4 w3-container grow bg-steel">
+                   <div class="w3-half">
+                     <div class="w3-margin">
+                      <input id="nameBox" class="w3-input" placeholder="Name" type="text">
+                     </div>
+                     <div class="w3-margin">
+                      <input id="emailBox" class="w3-input" pattern='/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/' placeholder="E-mail" type="email">
+                     </div>
+                     <div class="w3-margin">
+                      <input id="phoneBox" class="w3-input" pattern="^([0-9]( |-)?)?(\(?[0-9]{3}\)?|[0-9]{3})( |-)?([0-9]{3}( |-)?[0-9]{4}|[a-zA-Z0-9]{7})$" placeholder="Phone" type="tel">
+                     </div>
+                    </div>
+                    <div class="w3-half">
+                      <div class="w3-margin">
+                        <textarea id="messageBox"  class="w3-textarea" placeholder="Leave your message here..." style="min-height: 150px; max-height: inherit; width:100%; max-width: 100%"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                <div class="w3-center w3-margin">
+                  <button class="w3-button bg-steel plat" onclick="Validate('nameBox', 'phoneBox','emailBox', 'messageBox')">Send Message</button>
+                </div>
+              </div>
+            </div>
+            
+            <footer class="bg-darkblue plat rale w3-container w3-center" style="padding-top: 100px">
+              Powered by <a style="padding-right: 10px;" href="w3.css" target="_blank">w3.css</a> - <a style="padding-left: 10px;" href="/design/index.html">Nestor Design Specification</a>
+            </footer>
+      </main>
+    </body>
 </html>
