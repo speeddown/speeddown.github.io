@@ -2,95 +2,98 @@
 <html lang="en">
 <head>
   <title>Nestor Design Specifications</title>
-  <link rel="stylesheet" href="/css/design.css">
   <link href="https://fonts.googleapis.com/css?     family=Forum|Fugaz+One|Metamorphous|Prosto+One|Share|Raleway|Just+Another+Hand" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/w3.css">
+  <link rel="stylesheet" href="../css/design2.css">
 </head>
 <body>
-	<div class="card">
-		<div class="container">
-			<h1>Logo</h1>
-			<h3>Vector Logo</h3>
-			<p>This is the Nestor logo in image form, there are two versions.</p>
-			<p>SVG format will look awesome no matter how much it is stretched so if possible, use the SVG format. Facebook may not allow you to upload images in this format but if it does, use it. If not, PNG format will be fine as well.</p>
-          <div class="bar">
-            <div class="text-heading ts-24">
-					SVG Format
-				</div>
-				<img src="/Images/logosvg.svg" title="SVG Format">
-				<div class="text-heading ts-24">
-					PNG Format
-				</div>
-				<img src="/images/logo.png" title="PNG Format">
-          </div>
-				
-		</div>
-	</div>
-	<div class="card">
-		<div class="container">
-			<div class="container">
-				<h1>Text/Font Logo</h1>
-				<p>The logo should use the font called 'Metamorphous'. It is a Google web font so it can be downloaded freely.</p>
-				<a href="https://fonts.googleapis.com/css?family=Metamorphous">Google Web Font</a>
-				<a href="https://www.fontsquirrel.com/fonts/metamorphous">Font Download</a>
-			</div>
-			<div class="container">
-				<h1>Text/Font Content</h1>
-				<p>The font used for content is called 'Raleway'. It is also freely available as a Google Web Font.</p>
-				<a href="https://fonts.google.com/specimen/Raleway">Google Web Font</a>
-				<a href="https://www.fontsquirrel.com/fonts/raleway">Font Download</a>
-			</div>
-		</div>
-	</div>
-	<div class="card">
-		<div class="container">
-			<h1>Colors</h1>
-			<p>Nestor has a specific color pallette. Certain elements are always a specific color. As of now, the only element that should always be a specific color is the logo which is Gold.</p>
-			<p>Primary Color: Gold</p>
-			<p>Secondary Color: Steel Blue</p>
-			<div class="container">
-				<div class="text-heading">
-					<p>Gold</p>
-					<p>Hex: #FFB80A</p>
-				</div>
-				<div class="color-box bg-gold"></div>
-			</div>
-			<div class="container">
-				<div class="text-heading">
-					<p>Platinum</p>
-					<p>Hex: #E5E5E5</p>
-				</div>
-				<div class="color-box bg-plat"></div>
-			</div>
-			<div class="container">
-				<div class="text-heading">
-					<p>Light Blue</p>
-					<p>Hex: #06AAFF</p>
-				</div>
-				<div class="color-box bg-lightblue"></div>
-			</div>
-			<div class="container">
-				<div class="text-heading">
-					<p>Dark Blue</p>
-					<p>Hex: #00517AF</p>
-				</div>
-				<div class="color-box bg-darkblue"></div>
-			</div>
-			
-			<div class="container">
-				<div class="text-heading">
-					<p>Steel Blue</p>
-					<p>Hex: #4682b4</p>
-				</div>
-				<div class="color-box bg-steel"></div>
-			</div>
-			<div class="container">
-				<div class="text-heading">
-					<p>Brown</p>
-					<p>Hex: #B23C00</p>
-				</div>
-				<div class="color-box bg-brown"></div>
-			</div>
-		</div>
-	</div>
+<div class="page">
+
+    <div class="w3-top w3-bar w3-card-4  navbar">
+        <a href="#home" class="w3-bar-item w3-button brand w3-wide w3-ripple">Nestor</a>
+        <div class="w3-right">
+            <a href="#About" class="w3-bar-item w3-button w3-ripple">About</a>
+            <a href="#Services" class="w3-bar-item w3-button w3-ripple">Services</a>
+            <a href="#Contact" class="w3-bar-item w3-button w3-ripple">Contact</a>
+        </div>
+    </div>
+  <div class="w3-container" id="home"><br/></div>
+  
+    <section class="w3-card-2 w3-margin w3-padding">
+        <div>
+            <h1>Logo Image</h1>
+            <p>This is the Nestor logo in image form, there are two versions.</p>
+            <p>SVG format will look awesome no matter how much it is stretched so if possible, use the SVG format. Facebook may not allow you to 
+                upload images in this format but if it does, use it. If not, PNG format will be fine as well.
+            </p>
+        </div>
+        <div class="w3-container w3-content">
+            <div class="w3-card-4 w3-margin-top w3-margin-right w3-third">
+                <header class="card-header w3-text-white w3-container w3-padding">PNG Format</header>
+                <div class="w3-center w3-padding-32"> <img src="../images/logo.png" class="w3-image"></div>
+                <button class="w3-button text-button w3-margin">Download</button>
+            </div>
+            <div class="w3-card-4 w3-margin-top w3-margin-bottom w3-third w3-right">
+                <header class="card-header w3-text-white w3-container w3-padding">SVG Format</header>
+                <div class="w3-center w3-padding-32"><img src="../images/logosvg.svg" class="w3-image">
+                </div>
+                    <button class="w3-button text-button w3-margin">Download</button>
+                </div>
+        </div>
+    </section>
+  
+    <section class="w3-card-2 w3-margin">
+        <div class="w3-container">
+            <h1 class="rale">Font Logo</h1>
+            <p>The logo should use the font called 'Metamorphous'. It is a Google web font so it can be downloaded freely.</p>
+            <button class="w3-button text-button">Google Web Fonts</button>
+            <button class="w3-button text-button">Font Download Site</button>
+        </div>
+        <div class="w3-container">
+            <h1>Font Content</h1>
+            <p>The font used for content is called 'Raleway'. It is also freely available as a Google Web Font.</p>
+            <button class="w3-button text-button">Google Web Fonts</button>
+            <button class="w3-button text-button">Font Download Site</button>
+        </div>
+    </section>
+  
+    <section class="w3-card-2 w3-margin w3-padding">
+            <div class="w3-card card-content">
+                <header class="card-header w3-padding">Brown</header>
+                <div class="w3-container color-box bg-brown card-content"></div>
+                <footer class="card-footer bg-lightblue w3-padding">Hex:#B23C00</footer>
+            </div>
+            <div class="w3-card-4 color-card">
+                <header class="card-header w3-container w3-padding">Gold</header>
+                <div class="w3-container color-box bg-gold"></div>
+                <footer class="card-footer bg-lightblue w3-padding">Hex:#FFB80A</footer>
+            </div>
+            <div class="w3-card-4 color-card">
+                <header class="card-header w3-container w3-padding">Platinum</header>
+                <div class="w3-container color-box bg-plat"></div>
+                <footer class="card-footer bg-lightblue w3-padding">Hex:#E5E5E5</footer>
+            </div>
+            <div class="w3-card-4 color-card">
+                <header class="card-header w3-container w3-padding">Light Blue</header>
+                <div class="color-box bg-plat"></div>
+                <footer class="card-footer bg-lightblue w3-padding">
+                    Hex: #06AAFF
+                </footer>
+            </div>
+    </section>
+
+    <section class="grid w3-card-4">
+        <div class="item-1 grid-cell w3-card-4">1</div>
+        <div class="item-2 grid-cell w3-card-4">
+            <div class="item-5 w3-card-4">5</div>
+            <div class="item-6 w3-card-4">6</div>
+            <div class="item-7 w3-card-4">7</div>
+        </div>
+        <div class="item-3 grid-cell w3-card-4">3</div>
+
+        <div class="item-4 grid-cell w3-card-4">4</div>
+    </section>
+</div>
 </body>  
 </html>
+
