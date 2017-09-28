@@ -1,0 +1,209 @@
+ /*-------------------------- Animations ---------------------------*/
+
+
+@keyframes inout { 
+    0%   { transform: scale(0, 0); } 
+    25%   { transform: scale(2, 2); }
+    50%   { transform: scale(0, 0); }
+    100%  { transform: scale(1, 1); } 
+}
+
+@-webkit-keyframes inout { /* Safari & Chrome */
+    0%   { -webkit-transform: scale(0, 0); } 
+    25%  { -webkit-transform: scale(2, 2); }
+    50%  { -webkit-transform: scale(0, 0); }
+    100% { -webkit-transform: scale(1, 1); } 
+} 
+
+ .grow-anim{
+     animation: inout 3s;
+     animation-iteration-count: infinite;
+     -webkit-animation: inout 3s;
+     -webkit-animation-iteration-count: infinite;
+     margin: auto;
+     position: relative;
+    }
+    
+.anim{
+    position: absolute;
+}
+
+/*------------------------ Universal Styles -------------------------*/
+    .page{
+        background-color: #FFB80A;
+        padding-top: 50px;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 50px;
+    }
+
+    .navbar{
+        background-color: steelblue;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    brand{
+        font-family: 'Metamorphous';
+        color: #FFB80A;
+    }
+
+    p{
+        font-family: 'Raleway';
+    }
+
+    .card{
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 10px 10px 0 rgba(0,0,0,0.19);
+        font-family: 'Raleway';
+    }
+
+    .card > .cardhead{
+        background-color: steelblue;
+        color: #E5E5E5;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        text-align: left;
+        font-family: 'Raleway';
+    }
+
+    .card > .cardcontent{
+        background-color: white;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card > .cardfoot{
+        background-color: steelblue;
+        color:#E5E5E5;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        text-align: left;
+        font-family: 'Raleway';
+        padding: 10px;
+    }
+
+    .w3-btn{
+        border-radius: 2px;
+    }
+
+    .full{
+        width: 100%;
+    }
+
+    .box{
+        min-height: 100px;
+    }
+
+/*----------------------------- Auto Sizing -------------------------*/
+    /*--------------------- Mobile CSS -------------------*/
+    @media only screen and (max-width: 500px){
+        
+    }
+    
+    
+    /*--------------------- Tablet CSS -------------------*/
+    @media only screen and (min-width: 501px) and (max-width: 1080px){
+        
+    }
+    
+    /*--------------------- Desktop CSS ------------------*/
+    @media only screen and (min-width: 1081px){
+        
+    }
+
+/* ------------------------ Color Definitions -----------------------*/
+    .bg-gold{background-color:      #FFB80A !important}
+    .bg-plat{background-color:      #E5E5E5 !important}
+    .bg-lightblue{background-color: #06AAFF !important}
+    .bg-darkblue{background-color:  #00517A !important}
+    .bg-brown{background-color:     #B23C00 !important}
+    .bg-steel{background-color: steelblue !important}
+    .gold-hover{background-color: #e6a400 !important}
+    .gold {color:       #FFB80A !important}
+    .plat {color:       #E5E5E5 !important}
+    .lightblue {color:  #06AAFF !important}
+    .darkblue{color:    #00517A !important}
+    .brown {color:      #B23C00 !important}
+    .steelblue{color:   steelblue !important}
+    .bg-white{background-color: white !important}
+
+/*------------------------- Hidden Code --------------------------*/
+   
+
+    
+/*
+         .item-1{
+            background-color: red;
+            
+        }
+    
+    .item-2{
+        background: #44a8a6;
+    }
+        .item-2{
+            background-color: black;
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        .item-3{
+            background-color: purple;
+            grid-column: 5;
+            grid-row: 1;
+        }
+
+        
+
+        .item-5{
+            background-color: green;
+            grid-column: 3;
+            grid-row: 3;
+        }
+
+        .item-6{
+            background-color: royalblue;
+            grid-column: 5;
+            grid-row: 3;
+        }
+
+        .item-7{
+            background-color: seagreen;
+            grid-column: 1;
+            grid-row: 5;
+        }
+        .item-3{
+        background: #30997a;
+        grid-area: sidebar;
+    }
+
+    .item-4{
+            background-color: pink;
+            grid-area: footer;
+        }
+
+    .item-5{
+        background-color: sienna;
+        grid-area: header;
+    }
+
+    .item-6{
+        background-color: indianred;
+        grid-area: article;
+    }
+
+    .item-7{
+        background-color: lawngreen;
+        grid-area: sidebar;
+    }
+
+    .item-8{
+            background-color: khaki;
+        }
+
+    .item-9{
+            background-color: violet;
+        }
+        
+
+        */

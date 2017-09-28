@@ -1,0 +1,189 @@
+ 
+
+
+/*------------------------ Universal Styles -------------------------*/
+    .page{
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .navbar{
+        background-color: #FFB80A !important;
+        color: #00517A !important;
+    }
+
+    *.navlinks{
+        color: #00517A;
+        font-family: 'Raleway';
+    }
+
+    *.navbar > .brand{
+        font-family: 'Metamorphous' ;
+    }
+
+    .minicard{
+        background-color: white;
+    }
+    
+    *.minicard > header{
+        background-color: #06AAFF !important;
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+        color: white;
+
+        grid-template-areas:   "header header header"
+                                            "main main sidebar"
+                                            "footer footer footer";    
+    }
+
+    .grid-cell{
+        background-color: royalblue;
+        text-align: center;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+    }
+
+    .grid-gutter{
+        background-color: white;
+    }
+
+    
+
+/*----------------------------- Auto Sizing -------------------------*/
+    /*--------------------- Mobile CSS -------------------*/
+    @media only screen and (max-width: 500px){
+        .grid{
+            display: grid;
+            width: 100%;
+            margin: 0 auto;
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 80px auto auto 80px;
+            grid-gap: 10px;
+
+            grid-template-areas:
+                "header"
+                "main"
+                "sidebar"
+                "footer";
+        }
+    }
+    /*--------------------- Tablet CSS -------------------*/
+    @media only screen and (min-width: 501px) and (max-width: 960px){
+        body{
+            background-color: #F5CF8E;
+        }
+    }
+    /*--------------------- Desktop CSS ------------------*/
+    @media only screen and (min-width: 961px){
+        body{
+            background-color: #B2D6FF;
+        }
+    }
+
+/* ------------------------ Color Definitions -----------------------*/
+    .bg-gold{background-color:      #FFB80A !important}
+    .bg-plat{background-color:      #E5E5E5 !important}
+    .bg-lightblue{background-color: #06AAFF !important}
+    .bg-darkblue{background-color:  #00517A !important}
+    .bg-brown{background-color:     #B23C00 !important}
+    .bg-steel{background-color: steelblue !important}
+    .gold-hover{background-color: #e6a400 !important}
+    .gold {color:       #FFB80A !important}
+    .plat {color:       #E5E5E5 !important}
+    .lightblue {color:  #06AAFF !important}
+    .darkblue{color:    #00517A !important}
+    .brown {color:      #B23C00 !important}
+    .steelblue{color:   steelblue !important}
+
+/*------------------------- Hidden Code --------------------------*/
+    .item-1{
+            grid-area: header;
+            background-color: red;
+        }
+    
+    .item-2{
+        background: #44a8a6;
+        grid-area: main;
+        display: grid;
+
+        grid-template-columns: 1fr 30%;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+
+        grid-template-areas:    "header header"
+                                             "article sidebar"
+    }
+
+    .item-3{
+        background: #30997a;
+        grid-area: sidebar;
+    }
+
+    .item-4{
+            background-color: pink;
+            grid-area: footer;
+        }
+
+    .item-5{
+        background-color: sienna;
+        grid-area: header;
+    }
+
+    .item-6{
+        background-color: indianred;
+        grid-area: article;
+    }
+
+    .item-7{
+        background-color: lawngreen;
+        grid-area: sidebar;
+    }
+/*
+        .item-2{
+            background-color: black;
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        .item-3{
+            background-color: purple;
+            grid-column: 5;
+            grid-row: 1;
+        }
+
+        
+
+        .item-5{
+            background-color: green;
+            grid-column: 3;
+            grid-row: 3;
+        }
+
+        .item-6{
+            background-color: royalblue;
+            grid-column: 5;
+            grid-row: 3;
+        }
+
+        .item-7{
+            background-color: seagreen;
+            grid-column: 1;
+            grid-row: 5;
+        }
+
+        .item-8{
+            background-color: khaki;
+            grid-column: 3;
+            grid-row: 5;
+        }
+
+        .item-9{
+            background-color: violet;
+            grid-column: 5;
+            grid-row: 5;
+        }*/
