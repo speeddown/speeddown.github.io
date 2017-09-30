@@ -95,6 +95,26 @@
         min-height: 100px;
     }
 
+    .nav-button-theme{
+        background-color: steelblue;
+        color: #FFB80A;
+    }
+
+    a.nav-button-theme:hover{
+        background-color: #FFB80A;
+        color: #00517A;
+    }
+
+    .button-theme{
+        background-color: #FFB80A;
+        color: #00517A;
+    }
+
+    a.button-theme:hover{
+        background-color: #e6a400;
+        color: #00517A;
+    }
+
 /*----------------------------- Auto Sizing -------------------------*/
     /*--------------------- Mobile CSS -------------------*/
     @media only screen and (max-width: 500px){
