@@ -61,10 +61,38 @@ a.nav-button-theme:hover{
     /*----------------------------- Auto Sizing -------------------------*/
     /*--------------------- Mobile CSS -------------------*/
     @media only screen and (max-width: 600px){
+        .mainheader{
+            height: 300px;
+            margin-top: -20px;
+        }
+
+        .mainheader{
+            padding-top: 100px;
+            padding-bottom: 200px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .header-text{
+            margin-bottom: 8px;
+        }
+
+        .header-motto{
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .header-links{
+            text-align: right;
+            margin-bottom: 8px;
+            padding-bottom: 65px;
+        }
+
         .topcard{
             width: 100%;
             text-align: center;
             border-radius: 0px;
+            margin-top: 0px;
             padding-top: 64px;
             padding-bottom: 64px;
         }
@@ -82,6 +110,7 @@ a.nav-button-theme:hover{
             box-shadow: 0px 0px 0px 0px;
             text-align: center;
             min-width: 300px;
+            margin-bottom: 0px;
         }
 
         .contentcard > h1{
@@ -100,7 +129,10 @@ a.nav-button-theme:hover{
             margin-bottom: 12px;
         }
 
-        
+        .contactcard{
+            margin-bottom:0px;
+            padding-bottom:0px;
+        }
     }
     
     /*--------------------- Tablet CSS -------------------*/
@@ -113,18 +145,24 @@ a.nav-button-theme:hover{
 
         .mainheader{
             padding-top: 100px;
-            padding-bottom: 80px;
+            padding-bottom: 65px;
+        }
+
+        .header-motto{
+            text-align: left;
+            margin-left: 5%;
+            margin-bottom: 10px;
+        }
+
+        .header-links{
+            text-align: right;
+            margin-right: 5%;
+            margin-bottom: 0px;
         }
 
         .text-logo{
             width:90%;
             margin-left: 5%;
-        }
-
-        .heading-text{
-            width:90%;
-            margin-left: 5%;
-            margin-right: 5%;
         }
 
         .contentcard{
@@ -137,6 +175,10 @@ a.nav-button-theme:hover{
             margin-left: 5%;
             margin-right: 5%;
         }
+
+        .contactcard{
+            margin-bottom: 24px;
+        }
     }
     
     /*--------------------- Desktop CSS ------------------*/
@@ -145,6 +187,20 @@ a.nav-button-theme:hover{
             margin-top: -100px;
             border-radius: 4px;
             width: 80%;
+        }
+        .header-text{
+            padding-bottom: 0px;
+            margin-bottom:0px;
+        }
+
+        .header-motto{
+            text-align: left;
+            margin-left: 10%;
+        }
+
+        .header-links{
+            text-align: right;
+            margin-right: 10%;
         }
 
         .text-logo{
@@ -171,6 +227,10 @@ a.nav-button-theme:hover{
         .sheet{
             margin-left: 10%;
             margin-right: 10%;
+        }
+
+        .contactcard{
+            margin-bottom: 24px;
         }
     }
 
