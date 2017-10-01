@@ -179,6 +179,22 @@ a.nav-button-theme:hover{
         .contactcard{
             margin-bottom: 24px;
         }
+
+        .modal-hi{
+            font-size: 72px;
+            font-weight: 100px;
+        }
+
+        .modal-box{
+            background-color: steelblue;
+            font-size: 32px;
+            color: white;
+        }
+
+        .modal-close{
+            border-radius: 3px;
+            font-size: 16px;
+        }
     }
     
     /*--------------------- Desktop CSS ------------------*/
@@ -231,6 +247,22 @@ a.nav-button-theme:hover{
 
         .contactcard{
             margin-bottom: 24px;
+        }
+
+        .modal-hi{
+            font-size: 72px;
+            font-weight: 100px;
+        }
+
+        .modal-box{
+            background-color: steelblue;
+            font-size: 32px;
+            color: white;
+        }
+
+        .modal-close{
+            border-radius: 3px;
+            font-size: 16px;
         }
     }
 

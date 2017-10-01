@@ -1,6 +1,24 @@
 <!DOCTYPE = html>
 <html lang="en">
     <head>
+      <!-- Global Site Tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107286258-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107286258-1');
+      </script>
+
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TV8XGN8');</script>
+      <!-- End Google Tag Manager -->
+      
         <meta charset="utf-8">
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +26,6 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Forum|Fugaz+One|Metamorphous|Prosto+One|Share|Raleway|Just+Another+Hand" rel="stylesheet" />
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/homestyle.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -21,10 +38,10 @@
             <div class="w3-large meta">
                 <h1 class="text-logo">Nestor</h1>
                 <div class="w3-row header-text">
-                    <div class="w3-half gold rale w3-left header-motto">
+                    <div class="gold rale w3-left w3-large header-motto">
                         A helpful guide through web, mobile, and desktop software design and development
                     </div>
-                    <div class="w3-half gold w3-right header-links">
+                    <div class="w3-large gold w3-right header-links">
                         <i class="fa fa-facebook-official w3-hover-opacity"></i>
                         <i class="fa fa-linkedin w3-hover-opacity"></i>
                     </div>
@@ -72,6 +89,10 @@
 </div>
 
 <body class="page bg-gold body_div">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV8XGN8"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="sheet">
 
             <!-- About -->
@@ -150,7 +171,7 @@
                                         <div class="cardfoot">
                                             <h4>Web</h4>
                                             <p class="just">A responsive design allows for a homogeneous look across devices. Basically, it works great and looks awesome no matter what the platform may be</p>
-                                        </div>
+                                            </div>
                                     </div>
                                 </div>
                                 <div class="w3-col w3-half w3-center">
@@ -204,7 +225,7 @@
                     <!-- Services Large -->
                         <div class="w3-row w3-container w3-center w3-hide-medium w3-hide-small">
                                 <div class="w3-col w3-quarter ">
-                                    <a class="w3-btn  w3-ripple learn-button button-theme " href="#learnmore">Learn more</a>
+                                    <button onclick="document.getElementById('construct-modal').style.display='block'" class="w3-btn button-theme">Learn more</button>
                                 </div>
                                 <div class="w3-col w3-quarter">
                                     <a class="w3-btn  w3-ripple learn-button button-theme" href="#learnmore">Learn more</a>
@@ -240,14 +261,57 @@
     </div>
 </div>
     
+<div>
+    <button onclick="OpenModal(document.getElementById('learn-modal'))">Learn more</button>
+</div>
     
 
 <footer class="bg-darkblue plat w3-container w3-center w3-card-4" style="height: 200px; width: 100%;">
     <div class="w3-container" style="padding-top:150px">
         Powered by <a style="padding-right: 10px;" href="w3.css" target="_blank">w3.css</a> - <a style="padding-left: 10px;" href="/design/index.html">Nestor Design Specification</a>
     </div>
-            
-</footer>
-</body>
 
+    <div id="construct-modal" class="w3-modal ">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4 ">
+        <header class="w3-container modal-box  w3-hide-small w3-hide-large">
+            
+            <div class="modal-content">
+                <div class="modal-hi rale">
+                    Hi!
+                </div> 
+                Hi, we're not done with this page just yet, sorry about that
+                <p> : ( </p>
+            </div>
+            <div class="w3-container w3-margin">
+                <button class="w3-btn button-theme modal-close" onclick="document.getElementById('construct-modal').style.display = 'none'">Back to main site</button>
+            </div>
+        </header>
+        </div>
+    </div>
+</footer>
+
+
+
+<div class="w3-modal" onclick="this.style.display='none'">
+    <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container">
+            <div class="modal-hi rale">
+                    Hi!
+                </div> 
+                Hi, we're not done with this page just yet, sorry about that
+                <p> : ( </p>
+            </div>
+            <div id="learn-modal" class="w3-container w3-margin">
+                <button class="w3-btn button-theme modal-close" onclick="document.getElementById('construct-modal').style.display = 'none'">Back to main site</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function OpenModal(element){
+        element.getElementById("w3-modal").src = element;
+        element.style.display = "block";
+    }
+</script>
 </html>
