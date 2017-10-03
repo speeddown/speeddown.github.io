@@ -73,10 +73,20 @@ a.button-theme:hover{
 	.group-text{
 		text-align: left;
 	}
+	
 	a.button-theme{
 		border-radius: 3px;
 	}
 	a.button-theme:hover{
+		box-shadow: none;
+		background-color: #FFB80A !important;
+	}
+	
+	.button-theme{
+		border-radius: 3px;
+	}
+	
+	.button-theme:hover{
 		box-shadow: none;
 		background-color: #FFB80A !important;
 	}
@@ -138,10 +148,14 @@ a.button-theme:hover{
 		padding: 18px;
 	}
 	
-	a.button-theme{
+	.margin-top{
+		margin-top: 2%;
+	}
+	button.button-theme{
+		background-color: transparent;
 		border-radius: 3px;
 	}
-	a.button-theme:hover{
+	button.button-theme:hover{
 		box-shadow: none;
 		background-color: #FFB80A !important;
 	}
