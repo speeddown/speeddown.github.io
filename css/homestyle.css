@@ -1,288 +1,255 @@
-.contentcard{box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);}
-.page{margin-top: 0px;}
 .sheet{width: 100%;}
-.mainheader{background-size:cover;background-attachment: fixed;background-image: url("/images/headerbg.jpg");padding-top: 0px; padding-bottom: 24px;}
-.text-logo{font-family: 'Metamorphous'; color:#FFB80A; font-size: 72px;}
-.card{box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 10px 10px 0 rgba(0,0,0,0.19);font-family: 'Raleway';}
-.card > .cardhead{background-color: steelblue;
-    color: #E5E5E5;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; 
-    text-align: left;
-    font-family: 'Raleway'; }
-.card > .cardcontent{
-    background-color: white;
-}
-.card > .cardfoot{
-        background-color: steelblue;
-        color:#E5E5E5;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
-        text-align: left;
-        font-family: 'Raleway';
-    }
-
-.topcard{
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-}
-
+.mainheader{background-size:100%; background-attachment: fixed; background-image: url("/images/headerbg.jpg")}
 .learn-button{
     color: #00517A;
     font-family: 'Raleway';
     border-radius: 2px;
 }
-
-.just{
-    text-align: justify;
-    max-height: 200px;
-    min-width: 50%;
-}
-
-a:hover{
-    background-color: #06AAFF;
-    color: #E5E5E5;
-}
-
-a.learn-button:hover{
-    background-color: red;
-}
-
 .nav-button-theme{
     background-color: steelblue;
     color: #FFB80A;
 }
-
 a.nav-button-theme:hover{
     background-color: #FFB80A;
     color: #00517A;
 }
+.card{
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	background-color: white;
+}
+a.button-theme{
+	background-color: transparent;
+	padding: 12px;
+}
+a.button-theme:hover{
+	box-shadow: none;
+	background-color: #FFB80A !important;
+}
 
+/*-------------------- Auto Sizing -------------------------*/
+/*--------------------- Mobile CSS -------------------*/
+@media only screen and (max-width: 600px){
+	.mainheader{
+		padding-top:60px;
+		padding-left: 12px;
+		padding-bottom: 12px;
+	}
+	.header-logo{
+		font-size: 56px;
+	}
+	.header-motto{
+		font-size: 16px;
+	}
+	.badge{
+	  margin-top:12px;
+	  max-height: 50px;
+	}
+	.footer-left{
+		text-align: center;
+	}
+	.card{
+		padding: 12px;
+		box-shadow: none;
+		padding-bottom: 24px;
+		padding-top: 32px;
+	}
+	.group{
+		padding-top: 32px;
+		padding-bottom: 32px;
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	.group-head{
+		font-family: 'Raleway';
+		padding-top: 10px;
+	}
+	.group-text{
+		text-align: left;
+	}
+	a.button-theme{
+		border-radius: 3px;
+	}
+	a.button-theme:hover{
+		box-shadow: none;
+		background-color: #FFB80A !important;
+	}
+}
 
-    /*----------------------------- Auto Sizing -------------------------*/
-    /*--------------------- Mobile CSS -------------------*/
-    @media only screen and (max-width: 600px){
-        .mainheader{
-            height: 300px;
-            margin-top: -20px;
-        }
+/*--------------------- Tablet CSS -------------------*/
+@media only screen and (min-width: 601px) and (max-width: 991px){
 
-        .mainheader{
-            padding-top: 100px;
-            padding-bottom: 200px;
-            padding-left: 8px;
-            padding-right: 8px;
-        }
+	.sheet{
+		max-width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: -10%;
+	}
+	.mainheader{
+		padding-top: 150px;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-bottom: 10%;
+	}
+	.header-logo{
+		font-size: 72px;
+	}
+	.header-motto{
+		font-size: 16px;
+	}
+	.card{
+		padding: 24px;
+		margin-top: 24px;
+		border-radius: 4px;
+		padding-bottom: 32px;
+	}
+	.content{
+		margin-top:30px;
+	}
+	.group{
+		padding-top: 32px;
+		padding-bottom: 32px;
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	.group-head{
+		font-family: 'Raleway';
+		padding-top: 10px;
+	}
+	.group-text{
+		text-align: justify;
+	}
+	.group-foot{
+		margin-top: -10px;
+		margin-left: 6%;
+		margin-bottom: 24px;
+	}
+	.main-footer{
+	  font-size: 14px;
+	}
+	*.footer-right{
+	  height: 100px;
+	}
+	.footer-right > .powered{
+	  height: 100px;
+	  text-align: left;
+	}
+	.footer-right > .license{
+	  height: 50px;
+	  text-align: left;
+	}
+	a.button-theme{
+		border-radius: 3px;
+	}
+	a.button-theme:hover{
+		box-shadow: none;
+		background-color: #FFB80A !important;
+	}
+	#html5{
+	  max-width: 150px;
+	}
+	#js{
+	  max-height: 60px;
+	}
+}
 
-        .header-text{
-            margin-bottom: 8px;
-        }
+/*--------------------- Desktop CSS ------------------*/
+@media only screen and (min-width: 992px){
+	.sheet{
+		margin-left:10%;
+		margin-right: 10%;
+		width: 80%;
+		margin-top: -10%;
+	}
+	.mainheader{
+		padding-top: 10%;
+		padding-right: 10%;
+		padding-left: 10%;
+		padding-bottom: 10%;;
+	}
+	.header-logo{
+		font-size: 72;
+	}
+	.header-motto{
+		font-size: 20px;
+	}
+	.header-links{
 
-        .header-motto{
-            text-align: left;
-            margin-bottom: 10px;
-        }
-
-        .header-links{
-            text-align: right;
-            margin-bottom: 8px;
-            padding-bottom: 65px;
-        }
-
-        .topcard{
-            width: 100%;
-            text-align: center;
-            border-radius: 0px;
-            margin-top: 0px;
-            padding-top: 64px;
-            padding-bottom: 64px;
-        }
-
-        .topcard > h1{
-            text-align: center;
-            width: 100%;
-        }
-
-        .topcard > p{
-            width: 100%;
-        }
-
-        .contentcard{
-            box-shadow: 0px 0px 0px 0px;
-            text-align: center;
-            min-width: 300px;
-            margin-bottom: 0px;
-        }
-
-        .contentcard > h1{
-            text-align: center;
-        }
-        .abs-card > div > .cardhead{
-            margin-top: 16px;
-            text-align: center;
-        }
-        .abs-card > div > .cardfoot{
-            margin-top: 8px;
-            text-align: justify;
-        }
-
-        .section-head{
-            margin-bottom: 12px;
-        }
-
-        .contactcard{
-            margin-bottom:0px;
-            padding-bottom:0px;
-        }
-    }
-    
-    /*--------------------- Tablet CSS -------------------*/
-    @media only screen and (min-width: 601px) and (max-width: 991px){
-        .topcard{
-            margin-top: -60px;
-            border-radius: 3px;
-            width: 90%;
-        }
-
-        .mainheader{
-            padding-top: 100px;
-            padding-bottom: 65px;
-        }
-
-        .header-motto{
-            text-align: left;
-            margin-left: 5%;
-            margin-bottom: 10px;
-        }
-
-        .header-links{
-            text-align: right;
-            margin-right: 5%;
-            margin-bottom: 0px;
-        }
-
-        .text-logo{
-            width:90%;
-            margin-left: 5%;
-        }
-
-        .contentcard{
-            width: 90%;
-            border-radius: 3px;
-            margin-top: 16px;
-        }
-
-        .sheet{
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-
-        .contactcard{
-            margin-bottom: 24px;
-        }
-
-        .modal-hi{
-            font-size: 72px;
-            font-weight: 100px;
-        }
-
-        .modal-box{
-            background-color: steelblue;
-            font-size: 32px;
-            color: white;
-        }
-
-        .modal-close{
-            border-radius: 3px;
-            font-size: 16px;
-        }
-    }
-    
-    /*--------------------- Desktop CSS ------------------*/
-    @media only screen and (min-width: 992px){
-        .topcard{
-            margin-top: -100px;
-            border-radius: 4px;
-            width: 80%;
-        }
-        .header-text{
-            padding-bottom: 0px;
-            margin-bottom:0px;
-        }
-
-        .header-motto{
-            text-align: left;
-            margin-left: 10%;
-        }
-
-        .header-links{
-            text-align: right;
-            margin-right: 10%;
-        }
-
-        .text-logo{
-            margin-left: 10%;
-            width: 80%;
-        }
-
-        .heading-text{
-            margin-left: 10%;
-            width: 80%;
-        }
-
-        .mainheader{
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-
-        .contentcard{
-            width: 80%;
-            border-radius: 4px;
-            margin-top: 16px;
-        }
-
-        .sheet{
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-
-        .contactcard{
-            margin-bottom: 24px;
-        }
-
-        .modal-hi{
-            font-size: 72px;
-            font-weight: 100px;
-        }
-
-        .modal-box{
-            background-color: steelblue;
-            font-size: 32px;
-            color: white;
-        }
-
-        .modal-close{
-            border-radius: 3px;
-            font-size: 16px;
-        }
-    }
+	}
+	.group{
+		padding-top: 32px;
+		padding-bottom: 32px;
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	.group-head{
+		font-family: 'Raleway';
+		padding-top: 10px;
+	}
+	.group-text{
+		text-align: left;
+		min-height: 160;
+	}	
+	.card{
+		margin: 3%;
+		padding: 2%;
+	}
+	.content{
+		padding:18px;
+	}
+	.main-footer{
+		font-size: 8px;
+	}
+	.main-footer-text{
+	  font-size: 12px;
+	  height: 100px;
+	}
+	.main-footer-links{
+	  height: 100px;
+	}
+	.footer-right > .powered{
+		height: 100px;
+		text-align: left;
+	}
+	.footer-right > .license{
+		height: 100px;
+		text-align: left;
+	}
+	*.badge{
+	  height: 50px;
+}
+	*.footer-right{
+		height: 100px;
+	}
+	.margin-top{
+		margin-top: 2%;
+	}
+	button.button-theme{
+		background-color: transparent;
+		border-radius: 3px;
+	}
+	button.button-theme:hover{
+		box-shadow: none;
+		background-color: #FFB80A !important;
+	}
+}
 
 /*-- Fonts --*/
-    .rale{font-family: 'Raleway';}
-    .meta{ font-family: 'Metamorphous'; }
+.rale{font-family: 'Raleway';}
+.meta{ font-family: 'Metamorphous'; }
 
 /*-- Colors --*/
-    .bg-gold{background-color:      #FFB80A !important}
-    .bg-plat{background-color:      #E5E5E5 !important}
-    .bg-lightblue{background-color: #06AAFF !important}
-    .bg-darkblue{background-color:  #00517A !important}
-    .bg-brown{background-color:     #B23C00 !important}
-    .bg-steel{background-color: steelblue !important}
-    .gold-hover{background-color: #e6a400 !important}
-    .gold {color:       #FFB80A !important}
-    .plat {color:       #E5E5E5 !important}
-    .lightblue {color:  #06AAFF !important}
-    .darkblue{color:    #00517A !important}
-    .brown {color:      #F7C3A9 !important}
-    .steelblue{color:   steelblue !important}
-    .white{color: white !important}
-    .bg-white{background-color: white !important}
+.bg-gold{background-color:      #FFB80A !important}
+.bg-plat{background-color:      #E5E5E5 !important}
+.bg-lightblue{background-color: #06AAFF !important}
+.bg-darkblue{background-color:  #00517A !important}
+.bg-brown{background-color:     #B23C00 !important}
+.bg-steel{background-color: steelblue !important}
+.gold-hover{background-color: #e6a400 !important}
+.gold {color:       #FFB80A !important}
+.plat {color:       #E5E5E5 !important}
+.lightblue {color:  #06AAFF !important}
+.darkblue{color:    #00517A !important}
+.brown {color:      #F7C3A9 !important}
+.steelblue{color:   steelblue !important}
+.white{color: white !important}
+.bg-white{background-color: white !important}

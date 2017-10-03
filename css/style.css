@@ -5,6 +5,10 @@
     background-image: url("/images/headerbg.jpg");
 }
 
+#background{
+  background-attachment: fixed;
+}
+
 .sectionheader{
     color:steelblue;
     font-family: 'Raleway';
@@ -105,6 +109,6 @@
 }
 
 .desktopwidth{
-	width: 100%;
+	width: 10%;
 }
 
