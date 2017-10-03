@@ -82,6 +82,18 @@ a.button-theme:hover{
 		background-color: #FFB80A !important;
 	}
 	
+	.margin-top{
+		margin-top: 2%;
+	}
+	button.button-theme{
+		background-color: transparent;
+		border-radius: 3px;
+	}
+	button.button-theme:hover{
+		box-shadow: none;
+		background-color: #FFB80A !important;
+	}
+	
 	.button-theme{
 		border-radius: 3px;
 	}
