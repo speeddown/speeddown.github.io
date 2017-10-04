@@ -195,7 +195,7 @@ a.button-theme:hover{
 		padding-bottom: 10%;;
 	}
 	.header-logo{
-		font-size: 72;
+		font-size: 72px;
 	}
 	.header-motto{
 		font-size: 20px;
@@ -212,7 +212,7 @@ a.button-theme:hover{
 	}
 	.group-text{
 		text-align: left;
-		min-height: 160;
+		min-height: 160px;
 	}	
 	.card{
 		margin-bottom: 2%;
